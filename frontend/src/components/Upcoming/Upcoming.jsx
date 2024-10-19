@@ -187,7 +187,7 @@ const Upcoming = () => {
                 document.getElementById(document.getElementById("datePicker").value).scrollIntoView();
             }
         });
-        for(let i = 0; i < 365; i++){
+        for(let i = 0; i < 100; i++){
             date.setDate(date.getDate() + 1)
             let day = date.getDate();
             let month = date.getMonth() + 1;

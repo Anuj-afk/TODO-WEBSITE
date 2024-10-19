@@ -126,9 +126,9 @@ const Completed = () => {
                 document.getElementById(document.getElementById("datePicker").value).scrollIntoView();
             }
         });
-        for(let i = 0; i <= 365; i++){
+        for(let i = 0; i <= 100; i++){
             const tempDate = new Date(date)
-            tempDate.setDate(date.getDate() - 100 + i);
+            tempDate.setDate(date.getDate() - 50 + i);
             let day = tempDate.getDate();
             let month = tempDate.getMonth() + 1;
             let year = tempDate.getFullYear();
