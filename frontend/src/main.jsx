@@ -16,7 +16,7 @@ import { createBrowserRouter } from 'react-router-dom';
 const router = createBrowserRouter([
   {
     path: '/TODO-WEBSITE/',
-    element: <App></App>
+    element: <App></App>,
     children: [
       { path: '/TODO-WEBSITE/Today', element: <Today></Today> },
       { path: '/TODO-WEBSITE/Upcoming', element: <Upcoming></Upcoming> },
