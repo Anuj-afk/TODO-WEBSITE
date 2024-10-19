@@ -65,7 +65,9 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1",
-    "http://localhost:3000",# Add your React app URL here
+    "http://localhost:3000",
+    "https://anuj-afk.github.io",
+    # Add your React app URL here
 ]
 
 ROOT_URLCONF = 'Todo_project.urls'
