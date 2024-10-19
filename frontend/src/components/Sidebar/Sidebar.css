@@ -1,0 +1,102 @@
+.sidebar {
+    width: 12%; /* Adjusted width */
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: auto;
+}
+.sidebar hr {
+    border: none;
+    border-top: 1px solid rgb(0, 0, 0);
+    margin: 15px 0;
+}
+.todo {
+    margin-top: 1rem;
+}
+.Todo-label {
+    font-weight: bold;
+}
+.List-label {
+    font-weight: bold;
+}
+.filter {
+    margin-top: 20px;
+}
+.filter-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.filter-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.offcanvas {
+    background-color: #f7fff6;
+}
+.sidebar h2 {
+    color: #17b890; /* New color for sidebar headings */
+}
+.color-box {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+.high {
+    background-color: red;
+}
+.medium {
+    background-color: orange;
+}
+.low {
+    background-color: green;
+}
+
+.icon {
+    margin-right: 8px;
+    color: #7f79f7; /* New color for all icons */
+}
+h1 {
+    margin-bottom: 20px;
+}
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .fa-plus,
+.sidebar .fa-plus-circle {
+    color: dodgerblue; /* Lighter blue similar to links */
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sidebar .fa-trash{
+    color: lightgray;
+    margin-left: auto;
+    display: none;
+}
+
+#Lists:hover .fa-trash{
+    display: block;
+}
+ul{
+    padding-left: 0px !important;
+}
+

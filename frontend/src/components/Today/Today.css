@@ -1,0 +1,121 @@
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    margin-left: auto;
+}
+
+.separator {
+    width: 1px;
+    background-color: #ccc;
+    height: 100%;
+}
+
+.content {
+    background-color: #f7fff6;
+    width: 100%;
+    padding: 20px;
+}
+h1 {
+    margin-bottom: 20px;
+}
+.section-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.task-list{
+    margin-top: 20px;
+}
+.task-list hr {
+    border: none;
+    border-top: 1px solid black;
+    margin: 10px 0;
+}
+.add-task {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    color: dodgerblue; /* Changed add button color to a lighter blue */
+    text-decoration: none; /* No underline initially */
+}
+.add-task i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.add-task-text {
+    text-decoration: none;
+}
+
+.add-task-text:hover {
+    text-decoration: underline;
+}
+
+.checkbox {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    accent-color: #7b6ef6; /* Optional for checkbox color */
+}
+
+.task-input {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+}
+
+.add-btn {
+    background-color: #5a4e4e;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #403636;
+}
+#edit {
+    display: none;
+}
+.task-area:hover #edit {
+    display: block;
+    color: lightgray;
+    margin-left: auto;
+    font-size: 16px;
+    cursor: pointer;
+}
+#delete {
+    display: none;
+}
+.task-area:hover #delete {
+    display: block;
+    color: lightgray;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    rotate: 45deg;
+}
