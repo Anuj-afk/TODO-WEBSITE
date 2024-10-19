@@ -14,7 +14,13 @@ from pathlib import Path
 import os
 import datetime
 import pytz
+# import environ
 
+import dotenv
+dotenv.load_dotenv()
+# env = environ.Env()
+# Take environment variables from .env file
+# environ.Env.read_env("E:\vs code projects\TODO-APP\Todo_project\Todo_project\.env")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +33,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=m88!n8gbx&4=-ebd74oa-e^7h==yg$_8^s2^&%v9qt+3ogogf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["http://127.0.0.1:8000/", "127.0.0.1", "http://localhost:3000/","https://anuj-afk.github.io/TODO-WEBSITE/","https://anuj-afk.github.io/", ".vercel.app"]
 
@@ -86,14 +92,18 @@ WSGI_APPLICATION = 'Todo_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+import dj_database_url
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    'default': dj_database_url.parse(os.environ['DATABASE_URL'])
     }
-}
-
-
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
