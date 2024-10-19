@@ -9,11 +9,11 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/Today" element={<Today></Today>}></Route>
-      <Route path="/Upcoming" element={<Upcoming></Upcoming>}></Route>
-      <Route path="/Completed" element={<Completed></Completed>}></Route>
-      <Route path="/Missed" element={<Missed></Missed>}></Route>
-      <Route path="/List" element={<List></List>}></Route>
+      <Route path="TODO-WEBSITE/Today" element={<Today></Today>}></Route>
+      <Route path="TODO-WEBSITE/Upcoming" element={<Upcoming></Upcoming>}></Route>
+      <Route path="TODO-WEBSITE/Completed" element={<Completed></Completed>}></Route>
+      <Route path="TODO-WEBSITE/Missed" element={<Missed></Missed>}></Route>
+      <Route path="TODO-WEBSITE/List" element={<List></List>}></Route>
     </Routes>
   );
 }

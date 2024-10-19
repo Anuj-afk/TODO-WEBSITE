@@ -90,7 +90,7 @@ const Sidebar = () => {
                     <li>
                         <i className="fas fa-calendar-alt icon"></i>
                         <a
-                            href="/Today"
+                            href="/TODO-WEBSITE/Today"
                             style={{ textDecoration: "none", color: "black" }}
                         >
                             Today
@@ -99,7 +99,7 @@ const Sidebar = () => {
                     <li>
                         <i className="fas fa-calendar icon"></i>
                         <a
-                            href="/Upcoming"
+                            href="/TODO-WEBSITE/Upcoming"
                             style={{ textDecoration: "none", color: "black" }}
                         >
                             Upcoming
@@ -108,7 +108,7 @@ const Sidebar = () => {
                     <li>
                         <i className="fas fa-trophy icon"></i>
                         <a
-                            href="/Completed"
+                            href="/TODO-WEBSITE/Completed"
                             style={{ textDecoration: "none", color: "black" }}
                         >
                             Completed
@@ -117,7 +117,7 @@ const Sidebar = () => {
                     <li>
                         <i className="fas fa-times-circle icon"></i>
                         <a
-                            href="/Missed"
+                            href="/TODO-WEBSITE/Missed"
                             style={{ textDecoration: "none", color: "black" }}
                         >
                             Missed
@@ -143,7 +143,7 @@ const Sidebar = () => {
                         return(
                             <li id = "Lists" key={index}>
                                 <a
-                                    href="/List"
+                                    href="/TODO-WEBSITE/List"
                                     style={{ textDecoration: "none", color: "black" }}
                                     onClick={() => Title(list.id, list.title)}
                                 >
